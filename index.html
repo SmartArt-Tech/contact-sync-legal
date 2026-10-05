@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Sync</title><meta name="description" content="Android app that syncs phone contacts with Google Contacts.">
+<style>
+:root{--bg:#fff;--fg:#1b2430;--dim:#5b6877;--accent:#1565c0;--card:#f4f7fb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--fg:#e8eef4;--dim:#9aa7b4;--accent:#6aa9ff;--card:#1a2129}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:30px;margin:0 0 4px}h2{font-size:21px;margin:32px 0 6px}
+.dim{color:var(--dim)}a{color:var(--accent)}
+nav{margin:14px 0 26px}nav a{margin-right:18px}
+.card{background:var(--card);border-radius:10px;padding:14px 18px;margin:18px 0}
+li{margin:4px 0}code{background:var(--card);padding:1px 5px;border-radius:4px}
+</style>
+</head><body><main>
+<nav><a href="./">Contact Sync</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></nav>
+<h1>Contact Sync</h1>
+<p class="dim">Keeps your phone's contacts and your Google Contacts in step, on phones that have no touchscreen and no Play Store.</p>
+
+<p>Contact Sync is a small Android app for simple phones that are operated with the navigation keys, such as rugged and flip-style models,
+where the usual sync tools are missing. Everything in the app works with the Up/Down/OK/Back keys and the number keys; no touchscreen or browser is needed on the phone.</p>
+
+<h2>What it does</h2>
+<ul>
+<li><b>Two-way sync</b> between the contacts on the phone and your Google Contacts, or one-way in either direction if you prefer.</li>
+<li><b>Duplicate-aware.</b> Phone contacts are sent first, and anyone who already exists on both sides is matched and merged instead of copied twice.</li>
+<li><b>Conflict handling.</b> If the same contact changed on both sides, choose &ldquo;ask me&rdquo;, &ldquo;phone wins&rdquo; or &ldquo;Google wins&rdquo;. When asked, you see what differs and pick the phone version, Google&rsquo;s, or keep both.</li>
+<li><b>Automatic or manual.</b> Sync every 15 minutes up to once a day, or only when you press the button; optionally on Wi-Fi only.</li>
+<li><b>Choose what comes over.</b> Pick which Google labels (groups) to copy to the phone. Google&rsquo;s automatic &ldquo;Other contacts&rdquo; are never copied.</li>
+<li><b>Safety nets.</b> Deletions can be switched off, a sync that would remove most of your contacts is stopped, and a Stop button is always available.</li>
+</ul>
+
+<h2>How you sign in</h2>
+<p>You sign in with your Google account and approve a single permission: access to your contacts. If your phone has no web browser, the app shows a temporary
+page on your Wi-Fi so you can finish the sign-in in a browser on your computer. Your Google password never reaches the app, and you can revoke access at any time
+at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<div class="card"><b>Your data stays yours</b>
+<ul><li>Uses the Google People API with the permission <code>https://www.googleapis.com/auth/contacts</code>, only to synchronise your contacts with your phone.</li>
+<li>Does not read your email, files, calendar or any other Google data.</li>
+<li>Contact data travels directly between your phone and Google. The developer runs no server and never receives your data.</li></ul></div>
+
+<h2>Requirements</h2>
+<p>Android 6.0 or newer, a Google account, and a network connection for the sync itself.</p>
+
+<h2>Legal</h2>
+<p>Read the <a href="privacy.html">privacy policy</a> and the <a href="terms.html">terms of service</a>.</p>
+<p class="dim">Questions or problems: <a href="https://github.com/SmartArt-Tech/contact-sync-legal/issues">open an issue</a>.</p>
+<p class="dim" style="margin-top:44px">&copy; SmartArt Tech</p>
+</main></body></html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Sync - Privacy policy</title><meta name="description" content="Privacy policy for the Contact Sync Android app.">
+<style>
+:root{--bg:#fff;--fg:#1b2430;--dim:#5b6877;--accent:#1565c0;--card:#f4f7fb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--fg:#e8eef4;--dim:#9aa7b4;--accent:#6aa9ff;--card:#1a2129}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:30px;margin:0 0 4px}h2{font-size:21px;margin:32px 0 6px}
+.dim{color:var(--dim)}a{color:var(--accent)}
+nav{margin:14px 0 26px}nav a{margin-right:18px}
+.card{background:var(--card);border-radius:10px;padding:14px 18px;margin:18px 0}
+li{margin:4px 0}code{background:var(--card);padding:1px 5px;border-radius:4px}
+</style>
+</head><body><main>
+<nav><a href="./">Contact Sync</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></nav>
+<h1>Privacy policy</h1>
+<p class="dim">Contact Sync (Android app) &middot; Last updated: 5 October 2026</p>
+
+<p>Contact Sync (&ldquo;the app&rdquo;) is published by SmartArt Tech (&ldquo;we&rdquo;). This policy explains what information the app
+handles, why, and what control you have. In short: <b>your contacts go between your phone and your Google account and nowhere else.</b></p>
+
+<h2>What the app accesses</h2>
+<ul>
+<li><b>Contacts on your phone</b>, through the Android contacts permission you grant: names, phone numbers, email addresses, postal addresses,
+organisations and job titles, birthdays, notes, websites and nicknames.</li>
+<li><b>Your Google Contacts</b>, through the Google People API, after you sign in with Google. The app requests only the scope
+<code>https://www.googleapis.com/auth/contacts</code>. It reads the same kinds of fields as above, plus your contact labels (groups), so you can choose which labels to copy.
+It does not request access to Gmail, Drive, Calendar, your profile, or Google&rsquo;s automatically saved &ldquo;Other contacts&rdquo;.</li>
+<li><b>Optional CardDAV mode</b>: if you choose to use a CardDAV server instead, the app uses the server address and the login (for example an app password) you enter.</li>
+</ul>
+
+<h2>How the information is used</h2>
+<p>Only to perform the synchronisation you ask for: copying new and changed contacts between your phone and your Google account, detecting duplicates and
+conflicts, and showing you the result. We do not use it for advertising, profiling, analytics, or any other purpose, and we do not sell it.</p>
+
+<h2>Where it is processed and stored</h2>
+<ul>
+<li><b>On your device.</b> All processing happens inside the app on your phone. Contact data is sent directly between your phone and Google (or your chosen CardDAV server) over encrypted connections.</li>
+<li><b>We run no servers</b> for this app, so we never receive, store or can see your contacts, your Google sign-in, or your usage.</li>
+<li>The app keeps, in its private storage on your phone: your sign-in token (encrypted with the Android Keystore where the device supports it), a table that links each phone contact to its Google contact,
+your settings, and a short log of recent sync activity that may contain contact names. None of this leaves your phone.</li>
+<li>The app has no analytics, no advertising, and no crash-reporting service.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>We do not share your information with anyone. The only parties that receive contact data are Google (to store your contacts in your Google account, under Google&rsquo;s own privacy policy)
+and, if you choose that mode, the CardDAV server you configure.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>Contact Sync&rsquo;s use and transfer to any other app of information received from Google APIs will adhere to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Signing in from a computer</h2>
+<p>If your phone has no web browser, the app can show a temporary page on your local network so you can sign in with a browser on your computer. The page is served by the phone itself,
+is only reachable at a secret address shown on the phone, stops after you finish (or after 10 minutes), and the one-time sign-in code is useless without a secret that never leaves the phone.</p>
+
+<h2>Your choices and deleting your data</h2>
+<ul>
+<li><b>Sign out</b> in the app&rsquo;s Settings removes the stored sign-in token from the phone.</li>
+<li><b>Revoke access</b> at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li><b>Uninstalling the app</b> or clearing its data deletes everything the app stored on the phone.</li>
+<li>Contacts that were copied to your phone or to your Google account are your contacts; they stay there until you delete them in the Contacts app or in Google Contacts.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app is not directed at children, and we do not knowingly collect information from anyone, since we receive no data at all.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published on this page with a new &ldquo;last updated&rdquo; date.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="https://github.com/SmartArt-Tech/contact-sync-legal/issues">open an issue</a> in our public repository.</p>
+<p class="dim" style="margin-top:44px">&copy; SmartArt Tech</p>
+</main></body></html>
